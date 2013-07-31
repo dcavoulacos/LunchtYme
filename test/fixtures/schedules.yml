@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  references: 
+  day: MyString
+  start_time: MyString
+  end_time: MyString
+  location: MyString
+
+two:
+  references: 
+  day: MyString
+  start_time: MyString
+  end_time: MyString
+  location: MyString

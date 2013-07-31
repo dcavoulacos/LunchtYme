@@ -1,0 +1,63 @@
+<h1>Listing users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Netid</th>
+      <th>Class year</th>
+      <th>Res col</th>
+      <th>Email</th>
+      <th>Phone number</th>
+      <th>Gender</th>
+      <th>Friends</th>
+      <th>Likes</th>
+      <th>Mutual friends</th>
+      <th>Object me</th>
+      <th>Facebook</th>
+      <th>Provider</th>
+      <th>Oauth token</th>
+      <th>Oauth expires at</th>
+      <th>Last pull from facebook</th>
+      <th>Image url</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.first_name %></td>
+        <td><%= user.last_name %></td>
+        <td><%= user.netid %></td>
+        <td><%= user.class_year %></td>
+        <td><%= user.res_col %></td>
+        <td><%= user.email %></td>
+        <td><%= user.phone_number %></td>
+        <td><%= user.gender %></td>
+        <td><%= user.friends %></td>
+        <td><%= user.likes %></td>
+        <td><%= user.mutual_friends %></td>
+        <td><%= user.object_me %></td>
+        <td><%= user.facebook_id %></td>
+        <td><%= user.provider %></td>
+        <td><%= user.oauth_token %></td>
+        <td><%= user.oauth_expires_at %></td>
+        <td><%= user.last_pull_from_facebook %></td>
+        <td><%= user.image_url %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>

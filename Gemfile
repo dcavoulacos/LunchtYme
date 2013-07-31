@@ -69,8 +69,8 @@ gem 'net-ldap'
 gem 'net-http-digest_auth'
 
 # Authentication
-gem 'rubycas-client-rails'
-gem 'rubycas-client', '2.2.1'
+#gem 'rubycas-client-rails'
+#gem 'rubycas-client', '2.2.1'
 
 # makes better errors
 group :development do
